@@ -42,16 +42,55 @@ if(a<b)
 }else{printf("smallest: %d\n",b);
 }if(b<c)
 {
-    printf("smallest: %d\n",b);
-}else
-{
     printf("smallest: %d\n",c);
-}if(a<c)
-{
-    printf("smallest: %d\n",a);
-}else{printf("smallest: %d\n",c);
 }
+float gross = 12000;
+        float allowance, deduction;
+        if (gross > 10000) {
+            allowance = 0.10f * gross;
+            deduction = 0.03f * gross;
+        } else if (gross > 5000) {
+            allowance = 0.07f * gross;
+            deduction = 0.02f * gross;
+        } else {
+            allowance = 0.0f;
+            deduction = 0.0f;
+        }
+        float net = gross + allowance - deduction;
+        printf("3. Gross = %.2f → net = %.2f (allowance = %.2f, deduction = %.2f)\n", gross, net, allowance, deduction);
+ int num = 371;
+        if (num % 7 == 0)
+            printf("4. %d is divisible by 7\n", num);
+        else
+            printf("4. %d is not divisible by 7\n", num);
 
+float gross_sales = 25000;
+        float discount;
+        if (gross_sales > 20000)
+            discount = 0.15f * gross_sales;
+        else if (gross_sales > 10000)
+            discount = 0.10f * gross_sales;
+        else
+            discount = 0.05f * gross_sales;
+        float net_sales = gross_sales - discount;
+        printf("5. Gross sales = %.2f → net sales = %.2f (discount = %.2f)\n", gross_sales, net_sales, discount);
 
+int s1 = 75, s2 = 65, s3 = 55;
+        if (s1 < 35 || s2 < 35 || s3 < 35) {
+            printf("6. At least one subject < 35 → Student Fail\n");
+        } else {
+            float avg = (s1 + s2 + s3) / 3.0f;
+            char* grade;
+            if (avg >= 70)
+                grade = "Distinction";
+            else if (avg >= 60)
+                grade = "First Class";
+            else if (avg >= 50)
+                grade = "Second Class";
+            else if (avg >= 35)
+                grade = "Third Class";
+            else
+                grade = "Fail";
+            printf("6. Total = %.0f, Average = %.2f → %s\n", s1 + s2 + s3, avg, grade);
 return 0;
 }
