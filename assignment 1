@@ -1,0 +1,83 @@
+#include <stdio.h>
+
+int main() {
+  int a1 = 5, b1 = 3,c1;
+    c1=a1+b1;
+    printf("1. Sum: %d\n", c1);
+    int a2 = 10, b2 = 4,c2;
+    c2=a2-b2;
+    printf("2. Difference: %d\n", c2);
+     int a3 = 6, b3 = 7,c3;
+     c3=a3*b3;
+    printf("3. Product: %d\n", c3);
+     float a4 = 10, b4 = 2,c4;
+     c4=a4/b4;
+    printf("4. Quotient: %.2f\n", c4);
+    int a5 = 8, b5 = 4;
+    printf("5. Add: %d, Subtract: %d, Multiply: %d, Divide: %.2f\n", a5 + b5, a5 - b5, a5 * b5, (float)a5 / b5);
+
+
+int hours = 2;
+    printf("6. Minutes: %d\n", hours * 60);
+
+    float dollars1 = 10;
+    printf("8. Rupees: %.2f\n", dollars1 * 48);
+
+     float rupees1 = 240;
+    printf("9. Dollars: %.2f\n", rupees1 / 48);
+    float dollars2 = 100;
+    float rupees2 = dollars2 * 48;
+    float pounds = rupees2 / 70;
+    printf("10. Pounds: %.2f\n", pounds);
+
+    float grams1 = 1000;
+    printf("11. Kilograms: %.2f\n", grams1 / 1000);
+    float kg1 = 2.5;
+    printf("12. Grams: %.2f\n", kg1 * 1000);
+
+    float bytes = 1048576;
+    printf("13. KB: %.2f, MB: %.2f, GB: %.6f\n", bytes / 1024, bytes / (1024*1024), bytes / (1024*1024*1024));
+ float C1 = 30;
+    float F1 = (9.0/5) * C1 + 32;
+    printf("14. Fahrenheit: %.2f\n", F1);
+
+     float F2 = 86;
+    float C2 = (5.0/9) * (F2 - 32);
+    printf("15. Celsius: %.2f\n", C2);
+
+    float P = 1000, R = 5, N = 2;
+    float I = (P * R * N) / 100;
+    printf("16. Interest: %.2f\n", I);
+
+    float L1 = 4;
+    printf("17. Area of Square: %.2f, Perimeter: %.2f\n", L1 * L1, 4 * L1);
+
+    float L2 = 5, B2 = 3;
+    printf("18. Area of Rectangle: %.2f, Perimeter: %.2f\n", L2 * B2, 2 * (L2 + B2));
+
+    float R1 = 7;
+    printf("19. Area of Circle: %.2f\n", (22.0/7) * R1 * R1);
+ float H = 5, L3 = 10;
+    printf("20. Area of Triangle: %.2f\n", 0.5 * H * L3);
+       float gross = 30000;
+    float allowance = 0.10 * gross;
+    float deduction = 0.03 * gross;
+    float net_salary = gross + allowance - deduction;
+    printf("21. Net Salary: %.2f\n", net_salary);
+  float gross_sales = 50000;
+    float discount = 0.10 * gross_sales;
+    float net_sales = gross_sales - discount;
+    printf("22. Net Sales: %.2f\n", net_sales);
+        float s1 = 85, s2 = 90, s3 = 95;
+    float total = s1 + s2 + s3;
+
+    float avg = total / 3;
+    printf("23. Total: %.2f, Average: %.2f\n", total, avg);
+ int x = 5, y = 10, temp;
+    temp = x;
+    x = y;
+    y = temp;
+    printf("24. After swap: x = %d, y = %d\n", x, y);
+
+    return 0;
+}
